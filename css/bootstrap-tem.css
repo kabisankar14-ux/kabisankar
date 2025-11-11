@@ -1,0 +1,54 @@
+
+
+
+.navbar-brand{
+    font-size: 40px;
+    color: green;
+    margin: 0px auto;
+}
+.img-fluid{
+    height: auto;
+}
+.r-1{
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+    background-color: #e9eef5;
+}
+.c-1{
+    margin-top: 50px;
+}   
+.r-2{
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+}
+
+.c-2{
+     margin-top: 50px;
+}
+
+.h-1{
+    margin: 50px;
+}
+.month-section{
+    text-align: center;
+}
+.co-1{
+    text-align: center;
+}
+.img-1{
+    width: 100%;
+    border-radius: 150px;
+}
+.img-2{
+    width: 100%;
+    border-radius: 5px;
+}
+.bg-1{
+    height: 200px;
+    background-color:rgb(213, 228, 241) ;
+}
+.py-1{
+    background-color: #e9eef5;
+}

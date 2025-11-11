@@ -1,0 +1,89 @@
+
+
+.section{
+    width: 100%;
+    height: 400px;
+    background-color: darkseagreen;
+}
+
+.center{
+    width: 80%;
+    height: 400px;
+    margin: 0px auto;
+    background-color: chartreuse;
+}
+
+.left{
+    position: relative;
+    width: 45%;
+    height: 300px;
+    float: left;
+    margin:40px auto;
+    left: 20px;
+    background-color:white;
+}   
+
+.relative{
+    position: absolute;
+    width: 45%;
+    height: 200px;
+    left: 50px;
+    top: 50px;
+    border: 3px solid black;
+}
+
+.absolute{
+    position: absolute;
+    width: 25%;
+    height: 75px;
+    left: 200px;
+    top: 25px;
+    border: 3px solid green;
+}
+
+.right{
+    position: relative;
+    width: 45%;
+    height: 300px;
+    float: right;
+    right: 20px;
+    margin: 40px auto;
+    background-color: white;
+}
+
+.left-absolute{
+    position: absolute;
+    width: 40%;
+    height: 200px;
+    top: 60px;
+    right: 230px;  
+    border: 3px solid black;
+}
+
+.right-relative{
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    float: right;
+    right: 20px;
+    top: 30px;
+    border: 3px solid black;
+}
+
+.absolute-1{
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    top: 60px;
+    right: 10px;
+    border: 3px solid green;
+}
+
+.absolute-2{
+    position: absolute;
+    width: 30%;
+    height: 50px;
+    top: 25px;
+    left: 15px;
+    border: 3px solid green;
+}

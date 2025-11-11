@@ -1,0 +1,34 @@
+h1{
+            background-color: green;
+            color: chartreuse;
+        }
+
+        /* class selector  */
+            .bg-blue{
+                background-color: powderblue;
+                color: white;
+            } 
+      .ft{
+        font-size: 28px;
+        color:lightcoral ;
+      }
+
+      #name{
+        color: yellow;
+      }
+      
+      /* class selector */
+        .box{
+          background-color: blueviolet;
+          color: yellowgreen;
+          font-size: 28px; 
+        }
+        h2{
+          background-color:darkgrey;
+          color: darkblue;
+        }
+  h3{
+    background-color: cornflowerblue;
+    color: chartreuse;
+
+        }    

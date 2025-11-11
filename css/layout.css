@@ -1,0 +1,40 @@
+
+
+.section{
+    width:100% ;
+    height: 150px;
+    background-color: blue;
+}
+
+.center{
+    width: 80%;
+    height: 150px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+
+.left{
+    width: 30%;
+    height: 150px;
+    background-color: violet;
+    float: left;
+}
+.right{
+    width: 50%;
+    height: 150px;
+    background-color: green;
+    float: right;
+}
+.row{
+    width: 95%;
+    background-color: tomato;
+    height: 72px;
+    margin: 2px auto;
+}
+.col{
+    width: 32%;
+    height: 72px;
+    float: left;
+    background-color: burlywood;
+    margin-left: 2px;
+}

@@ -1,0 +1,113 @@
+
+
+.section{
+    width: 100%;
+    height: 150px;
+    background-color: crimson;
+}
+
+.center{
+    width: 80%;
+    height: 150px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+}
+
+
+.left{
+    width: 50%;
+    height: 145px;
+    background-color: rgb(38, 0, 255);
+    margin: 2px auto;
+    float: left;
+    margin-inline-end: 2px auto;
+}
+
+.right{
+    width: 49%;
+    height: 145px;
+    background-color: rgb(209, 195, 0);
+    margin: 2px auto;
+    float: right;
+}
+
+.aaa{
+    width: 100%;
+    height: 200px;
+    background-color: darkgreen;
+}
+
+.bbb{
+    width: 80%;
+    height: 200px;
+    background-color: chocolate;
+    margin: 0px auto;
+}
+
+.ccc{
+    width: 80%;
+    height: 90px;
+    background-color: chartreuse;
+    margin: 6px auto;
+}
+
+.ddd{
+    width: 80%;
+    height: 90px;
+    background-color:deepskyblue;
+    margin: 6px auto;
+}
+
+.eee{
+    width: 45%;
+    height: 80px;
+    background-color: darkgray;
+    margin: 2px auto;
+    float: left;
+}
+
+.fff{
+    width: 45%;
+    height: 80px;
+    background-color: darkgray;
+    margin: 2px auto;
+    float: right;
+}
+
+.ggg{
+    width: 100%;
+    height: 150px;
+    background-color: darkmagenta;
+    margin: 4px auto;
+}
+
+.hhh{
+    width: 80%;
+    height: 150px;
+    background-color: deeppink;
+    margin: 0px auto;
+}
+
+.iii{
+    width: 45%;
+    height: 130px;
+    background-color:deepskyblue;
+    margin: 8px auto;
+    float: left;
+}
+
+.jjj{
+    width: 50%;
+    height: 145px;
+    background-color: chartreuse;
+    margin: 2px auto;
+    float: right;
+}
+
+.kkk{
+    width: 85%;
+    height: 70px;
+    background-color:darkblue;
+    margin: 2px auto;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+  background-color: red;
+  color: cornsilk;
+}
+</style>
+<body>
+    <h2 style="color:cyan ;">A basic HTML table</h2>
+    <table style="width:25%">
+ <tr>
+    <th>Name:</th>
+    <td><input type="text" id="fname" name="fname"></td>
+ </tr>
+ <tr>
+    <th><label>Birthday</label></th>
+    <td><input type="dete" id="birthday" name="birthday"></td>      
+ </tr>
+ <tr>   
+    <th>Password:</th>
+    <td><input type="password" id="pwd" name="pwd"></td>
+ </tr>
+ <tr>  
+    <th>Number:</th>
+    <td><input type="number" id="mobile" name="mobile"></td>
+ </tr>
+ <tr>
+    <th>Eamil:</th>
+    <td><input type="email" id="eamil" name="eamil"></td>
+  </tr>
+  <tr>
+   <th>Button:</th>
+   <td><input type="button" onclick="alert('Hello World!')" value="button"></td>
+ <tr>   
+    <th>File</th>
+    <td><input type="file" id="myfile" name="myfile"></td>
+  </tr>
+</table>
+  <input type="submit" value="Submit">
+</body>
+</html>
