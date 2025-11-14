@@ -1,0 +1,18 @@
+
+
+.bg-1{
+    background-color: #005555;
+}
+.section{
+    height: 300px;
+}
+.row{
+    margin-top: 50px;
+}
+.button-1{
+    border-radius: 20px;
+    background-color: #005555;
+    color: white;
+    float: right;
+}
+
