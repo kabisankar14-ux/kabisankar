@@ -8,21 +8,45 @@
 <body>
 
 
-    <h2>Redeclaring a Variable</h2> 
-    <p id="name"></p> 
-    <button onclick="showValue()">Submit</button>
-    <script>
-        function showValue(){
-        document.getElementById('name').innerText="the value"
-        alert("value")
-        let a = Number(prompt("10"));
-        let b = Number(prompt("20"));
-        let sum = a + b;
-        console.log("Sum = " + sum);
-        
-    }
+    <h2>JavaScript Arithmetic</h2> 
 
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <br>
+    <br>
+
+    <button type="button" onclick="add()">Add</button>
+    <button type="button" onclick="subtrect()">Subtrect</button>
+    <button type="button" onclick="multiplication()">Multiplication</button>
+    <button type="button" onclick="division()">Division</button>
+
+    <h3 id="result1"></h3>
+    <h3 id="result2"></h3>
+    <h3 id="result3"></h3>
+    <h3 id="result4"></h3>
+
+    <script>
+        function add(){
+            let a=Number(document.getElementById("number1").value);
+            let b=Number(document.getElementById("number2").value);
+            document.getElementById("result1").innerText="Result:"+ (a + b);
+        }
+        function subtrect(){
+            let a=Number(document.getElementById("number1").value);
+            let b=Number(document.getElementById("number2").value);
+            document.getElementById("result2").innerText="Result:"+ (a - b);
+        }
+        function multiplication(){
+            let a=Number(document.getElementById("number1").value);
+            let b=Number(document.getElementById("number2").value);
+            document.getElementById("result3").innerText="Result:"+ (a * b);
+        }
+        function division(){
+            let a=Number(document.getElementById("number1").value);
+            let b=Number(document.getElementById("number2").value);
+            document.getElementById("result4").innerText="Result:"+(a / b);
+        }
     </script>
-    
+
 </body>
 </html>

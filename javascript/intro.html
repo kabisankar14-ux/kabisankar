@@ -12,16 +12,33 @@
     <h2>hi and welcome kabi</h2>
 
     <p id="test"></p>
-   
+   <div id="out">
+
+   </div>
 
     <input type="text" id="name">
     <button onclick="pop()">submit</button>
      <script>
+       let head= document.createElement('h2')
+        head.innerHTML="welcome"
+        head.style.color="yellow"
+        head.style.backgroundColor="green"
+        document.getElementById('out').appendChild(head)
+
+        document.getElementById('out').innerHTML="<h2> rajasekar is a trainer</h2>"
         function pop(){
         document.getElementById('test').innerHTML="welcome message"
-        alert("welcme")
+        alert("welcome")
       let x=  document.getElementById("test").value 
       console.log(x)
+        }
+        let t=show(1,20)
+        alert(t)
+        function show(a,b){
+
+
+            return a*b
+
         }
     </script>
 </body>
