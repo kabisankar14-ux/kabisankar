@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <h2>1. Even number</h2>
+    <button onclick="printeven()">Number</button>
+    <p id="evenoutput"></p>
+    <hr>
+
+    <h2>2. prime Number</h2>
+    <input type="number" id="primenumber">
+    <button onclick="checkprime()">check</button>
+    <p id="primeoutput"></p>
+
+
+<script>
+    function printeven(){
+        let result="";
+    for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+        result +=i +" ";
+        }   
+      }
+      document.getElementById("evenoutput").innerHTML=result;
+    }
+
+    function checkprime(){
+        
+    }
+</script>
+</body>
+</html>
