@@ -13,9 +13,32 @@
     <hr>
 
     <h2>2. prime Number</h2>
-    <input type="number" id="primenumber">
+    <input type="number" id="primeinput">
     <button onclick="checkprime()">check</button>
     <p id="primeoutput"></p>
+    <hr>
+    
+    <h2>3. Fibonacci series</h2>
+    <input type="number" id="fibinput">
+    <button onclick="checkfib()">check</button>
+    <p id="fiboutput"></p>
+    <hr>
+
+    <h2>4. star pattern</h2>
+    <input type="number" id="starinput">
+    <button onclick="printstars()">Show pattern</button>
+    <hr>
+
+    <h2>5. Reverse a number using while loop</h2>
+    <input type="number" id="loopinput">
+    <button onclick="reversenumber()">Reverse Number</button>
+    <pre id="loopoutput"></pre> 
+    <hr>
+
+    <h2>6. Factorial</h2>
+    <input type="number" id="factinput">
+    <button onclick="findfactorial()">Calculate</button>
+    <p id="factoutput"></p>
 
 
 <script>
@@ -30,8 +53,72 @@
     }
 
     function checkprime(){
+        let num= document.getElementById("primeinput").value;
+        let isprime= true;
+
+        if (num <= 1) {
+            isprime = false;
+        } else {
+            for(let i=2; i<= num /2; i++){
+                if (num % i===0) {
+                    isprime = false;
+                }
+            }
+        }
         
+        document.getElementById("primeoutput").innerHTML =
+        isprime ? '${num} is a prime number' : '${num} is NOT a prime Number';
     }
+
+    function checkfib(){
+        let n = document.getElementById("fibinput").value;
+        let a = 0, b = 1,result="";
+
+        for(let i=1; i<=n; i++){
+            result += a +"";
+            let next= a + b;
+            a = b;
+            b = next;
+        }
+
+        document.getElementById("fiboutput").innerHTML=result;
+    }
+    
+    function printstars(){
+        let n=document.getElementById("starinput").value;
+        for(let i=1; i<=n; i++){
+            let star="";
+            for (let j = 1; j <=i; j++){
+                star +="*";
+            }
+            console.log(star);
+        }
+    }
+
+    function reversenumber(){
+        let num = document.getElementById("loopinput").value;
+        let rev = 0;
+
+        while (num > 0){
+            let digit = num % 10;
+            rev = rev * 10 +digit;
+            num = Math.floor(num / 10); 
+        }
+        document.getElementById("loopoutput").innerHTML="Reversed Number:" +rev;
+    }
+
+    function findfactorial(){
+        let num = document.getElementById("factinput").value;
+        let fact = 1;
+        
+        for(let i=1; i <=num; i++){
+            fact*=i;
+        }
+        document.getElementById("factoutput").innerHTML=
+        "factorial of " +num +" is " + fact;
+    }
+
+
 </script>
 </body>
 </html>
