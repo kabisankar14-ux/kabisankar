@@ -39,7 +39,35 @@
     <input type="number" id="factinput">
     <button onclick="findfactorial()">Calculate</button>
     <p id="factoutput"></p>
+    <hr>
 
+    <h2>7.Armstrong number</h2>
+    <input type="number" id="arminput">
+    <button onclick="checkarmstrong()">Check</button>
+    <p id="armoutput"></p>
+    <hr>
+    
+    <h2>8.GCD</h2>
+    <input type="number" id="gcdinputa">
+    <input type="number" id="gcdinputb">
+    <button onclick="checkgcd()">Find GCD</button>
+    <p id="gcdoutput"></p>
+    <hr>
+
+    <h2>9.Sum 3 and 5 multiples</h2>
+    <button onclick="sumMultiples()">Show sum</button>
+    <p id="sumOutput"></p>
+    <hr>
+
+    <h2>10.keep asking number</h2>
+    <button onclick="askUntilzero()">Start Asking</button>
+    <p id="askOutput"></p>
+    <hr>
+
+    <h2>11.countDown from Input</h2>
+    <input type="number" id="countInput">
+    <button onclick="countDown()">Start Countdown</button>
+    <pre id="countOutput"></pre>
 
 <script>
     function printeven(){
@@ -67,7 +95,7 @@
         }
         
         document.getElementById("primeoutput").innerHTML =
-        isprime ? '${num} is a prime number' : '${num} is NOT a prime Number';
+        isprime ? `${num} is a prime number` : `${num} is NOT a prime Number`;
     }
 
     function checkfib(){
@@ -117,6 +145,64 @@
         document.getElementById("factoutput").innerHTML=
         "factorial of " +num +" is " + fact;
     }
+
+    function checkarmstrong(){
+        let num = document.getElementById("arminput").value
+        let temp= num, sum = 0;
+
+        while (temp >0) {
+            let digit = temp %10;
+            sum += digit ** 3;
+            temp = Math.floor(temp / 10);
+        }
+        document.getElementById("armoutput").innerHTML=
+        (sum==num) ?`${num} is an Armstrong number`: `${num} is Not an Armstrong number`;
+    }
+
+    function checkgcd(){
+        let a = document.getElementById("gcdinputa").value
+        let b = document.getElementById("gcdinputb").value 
+        a = Number(a); b = Number(b);
+        let x = a, y = b;
+        while (y != 0) {
+        let temp = y;
+        y = x % y;
+        x = temp;
+        document.getElementById("gcdoutput").innerHTML = `GCD of ${a} and ${b} is ${x}`;
+        }
+    }
+
+    function sumMultiples() {
+    let sum = 0;
+    for (let i = 1; i < 100; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += i;
+        }
+    }
+    document.getElementById("sumOutput").innerHTML = `Sum = ${sum}`;
+    }
+
+    function askUntilzero() {
+    let num;
+    while (true) {
+        num = parseInt(prompt("Enter a number (0 to stop):"));
+        if (num === 0) {
+            document.getElementById("askOutput").innerHTML = "Stopped. You entered 0.";
+            break;
+        }
+        }
+    }
+
+    function countDown() {
+    let n = document.getElementById("countInput").value;
+    let output = "";
+    while (n >= 0) {
+        output += n + "\n";
+        n--;
+    }
+    document.getElementById("countOutput").textContent = output;
+    }
+
 
 
 </script>
