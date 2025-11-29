@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Content</h1>
+    <h2>Name</h2>
+    <input type="text" id="name">
+    <p id="not" style="color: red;"></p>
+
+    <h2>password</h2>
+    <input type="password" id="password">
+    <p id="pass" style="color: red;"></p>
+
+
+    <button onclick="test()">Sumbit</button>
+
+    <script>
+        function test(){
+            let n=document.getElementById("name").value
+            let t= /^[a-zA-Z]{3,15}$/
+            if(n=="")
+            document.getElementById("not").innerHTML="Enter your name"
+            else if(!t.test(n)){
+                document.getElementById("not").innerHTML="Enter value name"
+            }
+            else{
+                document.getElementById("not").innerHTML=""
+            }
+
+
+             let p=document.getElementById("password").value
+            let passregex=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+={}[\]|:;'<>,.?/~`]).{8,}$/;
+            if(p=="")
+            document.getElementsById("pass").innerHTML="Enter your password"
+            else if(!passregex.test(p)){
+                document.getElementById("pass").innerHTML="Enter valid password"
+            }
+            else{
+                document.getElementById("pass").innerHTML=""
+            }
+        }
+       
+
+
+
+    </script>
+</body>
+</html>
