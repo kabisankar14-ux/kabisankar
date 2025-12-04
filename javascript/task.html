@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/task.css">
+
 </head>
 <body>
     <div class="container-fluid">
@@ -15,28 +16,44 @@
                     <h1>Responsive<br>Registration<br>Form</h1>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12">                
+
+            <div class="col-lg-7 col-md-12">                
     <div class="right-card">
+        <form class="registration" id="st-form">
         <h2>Registration Form</h2>
-        <form id="registration">
+                            <!-- name -->
         <div class="mb-3">
-            <label for="full" class="form-label" >Full Name</label> 
-            <input type="text" class="form-control" id="full" placeholder="Enter Full Name">
+            <label for="name" class="form-label">Full Name</label> 
+            <input type="text" class="form-control" id="name" placeholder="Enter Full Name">
+            <span id="not" style="font-size: 15px; color: red;"></span>
         </div>
+                            <!-- password -->
         <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter The password">
+            <span id="passerror" style="font-size: 15px; color: red;"></span>
+        </div>
+                            <!-- email -->
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
             <input type="email" class="form-control" id="email" placeholder="Enter The Email">
+            <span id="emailerror" style="font-size: 15px;color: red;"></span>
             </div>
+                            <!-- mobile -->
             <div class="row mb-3">
                 <div class="col-lg-5 col-md-12">
                 <label for="mobile" class="form-label">Mobile Number</label>
                 <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile number">
+                <span id="number" style="font-size: 15px;color: red;"></span>
                 </div>
-        <div class="col-lg-5 col-md-12">
+                            <!-- birth -->
+        <div class="col-md-6">
             <label for="birth" class="form-label">Birth Date</label>
             <input type="date" class="form-control" id="birth" placeholder="mm-day-year">
+            <span id="date" style="font-size: 15px;color: red;"></span>
         </div>
             </div>
+                            <!-- gender -->    
      <div class="mb-3">
         <label class="form-label">Gender</label>
         <div class="d-flex gap-4">
@@ -53,36 +70,48 @@
                 <label class="form-check-label" for="prefer">Prefer not to say</label>
             </div>
         </div>
+         <span id="gendererror" style="font-size: 15px;color: red;"></span>
         </div>
+
+                        <!-- address -->
         <div class="mb-3">
-            <label for="add" class="form-label">Address</label>
-            <input type="text" class="form-control" id="add" placeholder="Enter address">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address">
+            <span id="add" style="font-size: 15px;color: red;"></span>
         </div>
-        <div class="row">
+                        <!-- country -->
+        <div class="row mb-3">
             <div class="col-lg-5 col-md-12">
-                <label for="country" class="form-label"></label> 
-                <select class="form-select" id="country"required>
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country">
                     <option value="">Country</option>
                     <option value="au">Australia</option>
                     <option value="in">India</option>
                     <option value="other">Other</option>
                 </select>
+                <span id="count" style="font-size: 15px;color: red;"></span>
             </div>
-            <div class="col">
-                <label for="postal" class="form-label"></label>
+                            <!-- postal -->
+            <div class="col-md-6">
+                <label for="postal" class="form-label">Postal code</label>
                 <input type="number" class="form-control" id="postal" placeholder="Enter postal code">
+                <span id="post" style="font-size: 15px;color: red;"></span>
             </div>
         </div>
-            <button type="submit" class="button">Submit</button>
+           <button type="submit" class="button">Submit</button>
         </form>
     </div>
     </div>
+<span id="Result" style="color: black;font-size: 20px;"></span>
     
 
+    
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-       
+      <script src="./../js/validate.js"></script>
+ 
     </body>
 </html>
