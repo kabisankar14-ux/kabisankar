@@ -69,7 +69,7 @@
 
                         //Birth date
     if(birth===""){
-        document.getElementById("date").innerHTML="select your birth date";
+        document.getElementById("date").innerHTML="Select your birth date";
         valid=false;
     }
     else{
